@@ -5,7 +5,6 @@
     <parent>
         <artifactId>kumuluzee-samples</artifactId>
         <groupId>com.kumuluz.ee.samples</groupId>
-        <!-- todo RokM update to 5.1.0-SNAPSHOT upon release of 5.0.0 -->
         <version>5.0.0-SNAPSHOT</version>
     </parent>
 
@@ -24,9 +23,7 @@
     </modules>
 
     <properties>
-        <!-- todo RokM update to 2.1.0-SNAPSHOT upon release of 2.0.0 -->
         <kumuluzee-graphql.version>2.0.0-SNAPSHOT</kumuluzee-graphql.version>
-        <!-- todo RokM update to 3.1.0-SNAPSHOT upon release of 3.0.0 -->
         <kumuluzee-config-mp.version>3.0.0-SNAPSHOT</kumuluzee-config-mp.version>
         <postgresql.version>42.5.1</postgresql.version>
     </properties>
