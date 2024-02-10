@@ -5,10 +5,10 @@ import com.kumuluz.ee.rest.utils.JPAUtils;
 import com.kumuluz.ee.samples.graphql_advanced.entities.Student;
 import com.kumuluz.ee.samples.graphql_advanced.entities.connections.StudentConnection;
 
-import javax.enterprise.context.RequestScoped;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.transaction.Transactional;
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+import jakarta.transaction.Transactional;
 import java.time.LocalDate;
 
 @RequestScoped

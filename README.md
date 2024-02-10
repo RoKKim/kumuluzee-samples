@@ -80,7 +80,7 @@ KumuluzEE extensions - samples:
 
 In order to run these examples as they are intended, you will need the following:
 
-1. Java 8 (or newer), you can use any implementation:
+1. Java 21 (or newer), you can use any implementation:
     * If you have installed Java, you can check the version by typing the following in a command line:
         
         ```

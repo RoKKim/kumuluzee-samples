@@ -9,8 +9,8 @@ import com.kumuluz.ee.samples.graphql_advanced.entities.connections.LecturerConn
 import org.eclipse.microprofile.graphql.GraphQLApi;
 import org.eclipse.microprofile.graphql.Query;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import java.util.List;
 
 @GraphQLApi

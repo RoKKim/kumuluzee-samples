@@ -1,4 +1,5 @@
 # KumuluzEE GraphQL advanced sample
+
 > Unleash the full power of GraphQL extension.
 
 This is an advanced tutorial, which demonstrates advanced extension usage. Please finish the
@@ -8,29 +9,30 @@ This is an advanced tutorial, which demonstrates advanced extension usage. Pleas
 
 In order to run this example you will need the following:
 
-1. Java 8 (or newer), you can use any implementation:
+1. Java 21 (or newer), you can use any implementation:
     * If you have installed Java, you can check the version by typing the following in a command line:
-        
+
         ```
         java -version
         ```
 
 2. Maven 3.2.1 (or newer):
     * If you have installed Maven, you can check the version by typing the following in a command line:
-        
+
         ```
         mvn -version
         ```
 3. Git:
     * If you have installed Git, you can check the version by typing the following in a command line:
-    
+
         ```
         git --version
         ```
 
-
 ## Prerequisites
+
 In order to run this example you will have to setup a local PostgreSQL database:
+
 - __database host__: localhost:5432
 - __database name__: faculty
 - __user__: postgres
@@ -44,6 +46,7 @@ docker run -d --name pg-graphql -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=p
 ```
 
 ## Usage
+
 The example uses maven to build and run the microservices.
 
 1. Build the sample using maven:
@@ -54,13 +57,14 @@ The example uses maven to build and run the microservices.
     ```
 
 2. Run the sample:
+
 * Uber-jar:
 
     ```bash
     $ java -jar target/${project.build.finalName}.jar
     ```
-    
-    in Windows environment use the command
+
+  in Windows environment use the command
     ```batch
     java -jar target/${project.build.finalName}.jar
     ```
@@ -70,14 +74,14 @@ The example uses maven to build and run the microservices.
     ```bash
     $ java -cp target/classes:target/dependency/* com.kumuluz.ee.EeApplication
     ```
-    
-    in Windows environment use the command
+
+  in Windows environment use the command
     ```batch
     java -cp target/classes;target/dependency/* com.kumuluz.ee.EeApplication
     ```
-    
-    
+
 The application/service can be accessed on the following URL:
+
 * GraphQL endpoint - http://localhost:8080/graphql
 * __Graph*i*QL endpoint__ - http://localhost:8080/graphiql (playground for executing queries)
 
@@ -91,7 +95,8 @@ In this section, we will cover some use cases in this example and explain how th
 
 The pagination, sorting and filtering are all commonly used patterns in software development, and the plumbing required
 to implement these patterns is often repeated between the projects or even within the project itself. To solve this
-problem the KumuluzEE GraphQL includes integration with [KumuluzEE REST](https://github.com/kumuluz/kumuluzee-rest) project.
+problem the KumuluzEE GraphQL includes integration with [KumuluzEE REST](https://github.com/kumuluz/kumuluzee-rest)
+project.
 
 This is demonstrated in the sample with method getStudentsConnection in StudentResolvers.class.
 This method uses the Connection pattern, which wraps result list (`edges`) with the pagination metadata (`totalCount`).
@@ -108,12 +113,13 @@ public StudentConnection getStudentsConnection(Long limit, Long offset, String s
         .withOrder(sort)
         .withFilter(filter)
         .build();
-    
+
     return studentBean.getStudentConnection(qp);
 }
 ```
 
-There are a few things to note in this method. The first one is the method parameters (`limit`, `offset`, `sort` and `filter`).
+There are a few things to note in this method. The first one is the method parameters (`limit`, `offset`, `sort`
+and `filter`).
 They are translated to GraphQL query parameters and are used to construct the `QueryParameters` object. This object is
 later used to query the JPA source.
 
@@ -311,7 +317,9 @@ public Student createStudent(@NonNull Student student) {
     return studentBean.createStudent(student);
 }
 ```
-The following Java code will produce a mutation with input type StudentInput (output types can't be used as inputs in graphql).
+
+The following Java code will produce a mutation with input type StudentInput (output types can't be used as inputs in
+graphql).
 StudentInput type will contain the same fields as the output, but you can ignore fields.
 The field becomes ignored in input, if you put an @Ignore annotation on a setter.
 In our example, we don't want to allow adding enrolled date directly when creating a student, because we will set
@@ -319,13 +327,13 @@ enrolled date manually.
 
 ```java
 public class Student extends Person {
-    
+
     // ...
     @Ignore
     public void setEnrolled(LocalDate enrolled) {
         this.enrolled = enrolled;
     }
-    
+
 }
 ```
 

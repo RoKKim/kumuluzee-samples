@@ -20,7 +20,7 @@
 */
 package com.kumuluz.ee.samples.graphql_simple;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.io.Serializable;
 
 /**

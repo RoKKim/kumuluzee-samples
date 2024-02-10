@@ -3,6 +3,8 @@ kumuluzee:
     name: production
   graphql:
     mapping: graphql
+    federation:
+      enabled: false
     ui:
       enabled: true
     defaults:

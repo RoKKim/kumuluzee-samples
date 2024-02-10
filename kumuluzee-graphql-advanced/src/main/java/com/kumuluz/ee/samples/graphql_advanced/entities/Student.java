@@ -2,7 +2,7 @@ package com.kumuluz.ee.samples.graphql_advanced.entities;
 
 import org.eclipse.microprofile.graphql.Ignore;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity

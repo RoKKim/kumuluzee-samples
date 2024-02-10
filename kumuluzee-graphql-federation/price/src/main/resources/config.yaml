@@ -1,0 +1,21 @@
+kumuluzee:
+  server:
+    http:
+      port: 8080
+  graphql:
+    mapping: graphql
+    federation:
+      enabled: true
+    schema:
+      include-scalars: true
+      include-directives: true
+      include-schema-definition: true
+    ui:
+      enabled: true
+  datasources:
+    - jndi-name: jdbc/PricesDS
+      connection-url: jdbc:postgresql://localhost:5432/prices
+      username: postgres
+      password: postgres
+      pool:
+        max-size: 20

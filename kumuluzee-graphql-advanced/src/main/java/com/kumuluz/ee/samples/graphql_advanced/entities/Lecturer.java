@@ -2,7 +2,7 @@ package com.kumuluz.ee.samples.graphql_advanced.entities;
 
 import com.kumuluz.ee.samples.graphql_advanced.enums.LecturerStatus;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @NamedQueries(

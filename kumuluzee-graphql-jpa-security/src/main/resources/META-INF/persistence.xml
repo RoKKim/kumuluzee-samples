@@ -11,9 +11,9 @@
         <class>com.kumuluz.ee.samples.graphql_security.Customer</class>
 
         <properties>
-            <property name="javax.persistence.schema-generation.database.action" value="create"/>
-            <property name="javax.persistence.schema-generation.create-source" value="metadata"/>
-            <property name="javax.persistence.schema-generation.drop-source" value="metadata"/>
+            <property name="jakarta.persistence.schema-generation.database.action" value="create"/>
+            <property name="jakarta.persistence.schema-generation.create-source" value="metadata"/>
+            <property name="jakarta.persistence.schema-generation.drop-source" value="metadata"/>
         </properties>
 
     </persistence-unit>

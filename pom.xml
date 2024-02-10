@@ -3,10 +3,11 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
 
     <groupId>com.kumuluz.ee.samples</groupId>
     <artifactId>kumuluzee-samples</artifactId>
-    <version>3.13.0-SNAPSHOT</version>
+    <version>5.0.0-SNAPSHOT</version>
     <modules>
         <module>bean-validation</module>
         <module>https</module>
@@ -50,6 +51,7 @@
         <module>kumuluzee-reactive-vertx</module>
         <module>kumuluzee-grpc</module>
         <module>kumuluzee-graphql-advanced</module>
+        <module>kumuluzee-graphql-federation</module>
         <module>kumuluzee-graphql-jpa-simple</module>
         <module>kumuluzee-graphql-jpa-security</module>
         <module>kumuluzee-opentracing</module>
@@ -59,8 +61,6 @@
         <module>kumuluzee-version</module>
         <module>kumuluzee-feature-flags-unleash</module>
     </modules>
-
-    <packaging>pom</packaging>
 
     <name>KumuluzEE samples</name>
 
@@ -128,11 +128,11 @@
     </pluginRepositories>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <kumuluzee.version>3.13.0-SNAPSHOT</kumuluzee.version>
+        <kumuluzee.version>5.0.0-SNAPSHOT</kumuluzee.version>
     </properties>
 
 </project>

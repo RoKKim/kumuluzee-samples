@@ -20,7 +20,7 @@
 */
 package com.kumuluz.ee.samples.graphql_security;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.io.Serializable;
 
 /**

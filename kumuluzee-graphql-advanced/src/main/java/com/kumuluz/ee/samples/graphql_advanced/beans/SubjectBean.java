@@ -5,15 +5,15 @@ import com.kumuluz.ee.rest.utils.StreamUtils;
 import com.kumuluz.ee.samples.graphql_advanced.dtos.Subject;
 import com.kumuluz.ee.samples.graphql_advanced.entities.connections.SubjectConnection;
 
-import javax.annotation.PostConstruct;
-import javax.enterprise.context.ApplicationScoped;
+import jakarta.annotation.PostConstruct;
+import jakarta.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 
-// This bean represents a different data source (outside of JPA).
+// This bean represents a different data source (outside JPA).
 @ApplicationScoped
 public class SubjectBean {
     private Map<Integer, List<Subject>> subjectsByStudentNumber;

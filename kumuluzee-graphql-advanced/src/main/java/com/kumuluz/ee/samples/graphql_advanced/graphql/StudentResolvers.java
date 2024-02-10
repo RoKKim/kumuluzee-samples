@@ -11,8 +11,8 @@ import com.kumuluz.ee.samples.graphql_advanced.entities.Student;
 import com.kumuluz.ee.samples.graphql_advanced.entities.connections.StudentConnection;
 import org.eclipse.microprofile.graphql.*;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import java.util.List;
 
 @GraphQLApi

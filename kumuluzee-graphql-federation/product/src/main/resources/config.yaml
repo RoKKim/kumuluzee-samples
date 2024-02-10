@@ -1,0 +1,21 @@
+kumuluzee:
+  server:
+    http:
+      port: 8081
+  graphql:
+    mapping: graphql
+    federation:
+      enabled: true
+    schema:
+      include-scalars: true
+      include-directives: true
+      include-schema-definition: true
+    ui:
+      enabled: true
+  datasources:
+    - jndi-name: jdbc/ProductsDS
+      connection-url: jdbc:postgresql://localhost:5433/products
+      username: postgres
+      password: postgres
+      pool:
+        max-size: 20

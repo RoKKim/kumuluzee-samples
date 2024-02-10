@@ -1,6 +1,6 @@
 package com.kumuluz.ee.samples.graphql_advanced.entities;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 public class Assistant extends Person {

@@ -1,6 +1,6 @@
 package com.kumuluz.ee.samples.graphql_advanced.entities;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @MappedSuperclass
 public class Person {

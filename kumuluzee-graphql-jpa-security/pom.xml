@@ -5,20 +5,20 @@
     <parent>
         <artifactId>kumuluzee-samples</artifactId>
         <groupId>com.kumuluz.ee.samples</groupId>
-        <version>3.13.0-SNAPSHOT</version>
+        <version>5.0.0-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>kumuluzee-graphql-jpa-security</artifactId>
 
-    <name>KumuluzEE GraphQL Basic sample</name>
+    <name>KumuluzEE GraphQL Basic sample with security</name>
     <description>GraphQL example usage with KumuluzEE</description>
 
     <properties>
-        <kumuluzee-graphql.version>1.2.0-SNAPSHOT</kumuluzee-graphql.version>
-        <kumuluzee-config-mp.version>1.5.0-SNAPSHOT</kumuluzee-config-mp.version>
-        <kumuluzee-security.version>1.3.0-SNAPSHOT</kumuluzee-security.version>
+        <kumuluzee-graphql.version>2.0.0-SNAPSHOT</kumuluzee-graphql.version>
+        <kumuluzee-config-mp.version>3.0.0-SNAPSHOT</kumuluzee-config-mp.version>
+        <kumuluzee-security.version>2.0.0-SNAPSHOT</kumuluzee-security.version>
         <keycloak.version>11.0.2</keycloak.version>
         <postgresql.version>42.2.1</postgresql.version>
     </properties>
